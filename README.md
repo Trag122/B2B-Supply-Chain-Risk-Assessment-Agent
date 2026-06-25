@@ -54,14 +54,9 @@ The system is orchestrated using **LangGraph** to strictly govern the reasoning 
 | **5** | **Integrate Tavily or DuckDuckGo** | Agent autonomously searches for real-time news regarding the counterparty. |
 | **6** | **Develop Risk_Evaluator** | The LLM evaluates data and returns a specific risk level: LOW, MEDIUM, or HIGH. |
 | **7** | **Implement persistence with SQLite** | Workflow state is saved and can be resumed seamlessly using `thread_id`.
-
- |
 | **8** | **Add Human-in-the-loop** | Workflow pauses at critical points, waiting for the Credit Officer to explicitly approve/reject.
-
- |
 | **9** | **Execute 2 demo cases** | Successfully run one safe scenario and one high-risk scenario. |
 | **10** | **Export JSON/Markdown report** | Final structured report generated for PoC presentation. |
-
 
 ## Business Value (Product Perspective)
 
