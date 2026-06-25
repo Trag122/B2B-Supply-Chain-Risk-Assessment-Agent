@@ -45,31 +45,22 @@ The system is orchestrated using **LangGraph** to strictly govern the reasoning 
 
 *Tracking the development lifecycle of the PoC.*
 
-* [x] **Phase 1: Ideation & System Design**
-* Define the business case and pain points.
-* Draft README to outline the PoC scope and architecture.
+| Step | Action Item | Expected Result |
+| --- | --- | --- |
+| **1** | **Setup project & virtual environment** | Clean Python project running successfully in VS Code. |
+| **2** | **Create SQLite synthetic database** | Database populated with tables for borrower, counterparty, invoices, and transactions. |
+| **3** | **Develop Data_Extractor** | System successfully retrieves EcoCarton's transactions from the database. |
+| **4** | **Develop Dependency_Analyzer** | Calculate and output dependency metrics (e.g., "85% of cash flow relies on GreenSupermarket"). |
+| **5** | **Integrate Tavily or DuckDuckGo** | Agent autonomously searches for real-time news regarding the counterparty. |
+| **6** | **Develop Risk_Evaluator** | The LLM evaluates data and returns a specific risk level: LOW, MEDIUM, or HIGH. |
+| **7** | **Implement persistence with SQLite** | Workflow state is saved and can be resumed seamlessly using `thread_id`.
 
+ |
+| **8** | **Add Human-in-the-loop** | Workflow pauses at critical points, waiting for the Credit Officer to explicitly approve/reject.
 
-* [ ] **Phase 2: Synthetic Data Preparation**
-* Build a mock SQLite database for SME transaction histories.
-* Create company profiles (mapping synthetic borrowers to real-world companies currently facing market risks).
-
-
-* [ ] **Phase 3: LangGraph Core Development**
-* Define the `AgentState` and core `Nodes`.
-* Integrate the external Search Tool (Tavily).
-* Engineer specialized prompts for research and risk evaluation tasks.
-
-
-* [ ] **Phase 4: Advanced Features (UX & Risk Management)**
-* Implement memory persistence with SQLite.
-* Build the `Human-in-the-Loop` interrupt mechanism for manual review.
-
-
-* [ ] **Phase 5: Testing & Documentation**
-* Run case studies (Safe Scenario vs. High-Risk Scenario).
-* Extract the Agent's reasoning logs and visualize the execution graph.
-
+ |
+| **9** | **Execute 2 demo cases** | Successfully run one safe scenario and one high-risk scenario. |
+| **10** | **Export JSON/Markdown report** | Final structured report generated for PoC presentation. |
 
 
 ## Business Value (Product Perspective)
