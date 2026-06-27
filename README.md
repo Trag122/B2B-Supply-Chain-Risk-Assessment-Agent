@@ -377,3 +377,5 @@ An AI-assisted credit risk monitoring workflow for invoice financing, designed t
 ### Tieng Viet
 
 Mot quy trinh giam sat rui ro tin dung co AI ho tro cho nghiep vu tai tro hoa don, duoc thiet ke de phat hien rui ro lan truyen trong chuoi cung ung truoc khi rui ro do xuat hien tren bao cao tai chinh.
+
+(This PoC is inspired by a real B2B supply chain financing pattern in which the bank advances receivables to the Seller based on the Buyer’s payment commitment. The key risk insight is that although the financing is provided to the Seller, the repayment risk is strongly anchored to the Buyer’s financial health. Therefore, static financial analysis is not sufficient. The proposed AI Agent continuously combines internal transaction data with real-time market intelligence to detect Buyer-side risk signals before approving invoice financing.)
