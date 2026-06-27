@@ -1,0 +1,12 @@
+langgraph
+langchain-openai
+langchain-community
+langchain-tavily
+langgraph-checkpoint-sqlite
+python-dotenv
+pandas
+duckduckgo-search
+beautifulsoup4
+lxml
+requests
+pydantic
